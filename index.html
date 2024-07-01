@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="./asses/css/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="overflow-x-hidden">
+  <main class="bg-[rgb(255,255,255)] w-[100%]">
+    <section class="w-[100%] flex flex-wrap lg:justify-end relative">
+
+      <!-- ******part a -->
+      <div class="w-full h-[15vh]  fixed z-0   top-0 bg-[#FFFFFF]">
+
+        <!-- *************desk start -->
+        <div
+          class=" hidden w-full h-full lg:flex flex-wrap  *:h-full  *:flex *:flex-wrap *:items-center  justify-between ">
+
+          <!-- part1-desk -->
+          <div class=" w-[35%] lg:w-[18%] pr-6 *:flex *:items-center *:h-full ">
+
+            <figure class="w-[25%]  pl-6 ">
+              <img class="h-[30%] object-contain" src="./asses/img/logo.png" alt="">
+            </figure>
+
+            <h1 class="w-[35%] font-primary2 uppercase text-xl text-[#2d2d2d]">berry</h1>
+
+            <div class="w-[40%]  justify-end ">
+              <div class="w-[40px] h-[40px] duration-75" onclick="_widthMenu()">
+                <i
+                  class="w-full h-full bi bi-list text-2xl flex justify-center items-center  rounded  text-[rgb(126,87,194)] bg-[#EDE7F6]  cursor-pointer  duration-75 hover:bg-[rgb(126,87,194)] hover:text-[#EDE7F6]"></i>
+              </div>
+            </div>
+
+          </div>
+
+
+          <main class="w-[78%] mr-6  ">
+            <!-- part2-desk -->
+            <div class="lg:w-[60%]  ">
+              <div class="w-[50%]  bg-[#EDE7F6] p-3  border-2 outline-none rounded-lg border-[#FFFFFF] flex flex-wrap ">
+                <i class="bi bi-search text-[rgb(126,87,194)] w-[10%] "></i>
+                <input onblur="myBorder2(this)" onfocus="myBorder1(this)" id="_search"
+                  class="  w-[80%] outline-none border-none bg-transparent " type="text" placeholder="search">
+
+              </div>
+            </div>
+
+            <!-- part3-desk -->
+            <div class="lg:w-[40%]  flex justify-end ">
+              <figure class="w-[15%] ">
+                <img src="./asses/img/avada.svg" alt="">
+              </figure>
+              <i class="text-[rgb(126,87,194)] text-xl w-[10%]  flex justify-end items-center  bi bi-arrow-repeat "></i>
+              <i class="text-[rgb(126,87,194)] text-xl w-[10%]  flex justify-end items-center  bi bi-bookmark-check"></i>
+              <i class="text-[rgb(126,87,194)] text-xl w-[10%]  flex justify-end items-center bi bi-broadcast"></i>
+              <i class=" text-[rgb(126,87,194)] bi bi-browser-edge  text-xl w-[10%] items-center  flex justify-end "></i>
+            </div>
+
+          </main>
+        </div>
+        <!-- *************desk end -->
+
+        <!-- *************mob start -->
+
+        <!-- mob part1 -->
+        <div class="flex flex-wrap lg:hidden w-full h-full  items-center *:w-[50%] *:flex *:items-center *:flw px-5">
+
+          <!-- mob part1-1 -->
+          <section
+            class="*:text-[rgb(126,87,194)] *:bg-[rgba(248,250,252)]  *:rounded *:flex *:justify-center *:items-center *:h-[30px] *:w-[40px] *:duration-75 ">
+            <div onclick="myMenuMob()">
+              <i
+                class="bi bi-list text-2xl  cursor-pointer w-full h-full  rounded flex justify-center items-center hover:text-[rgba(248,250,252)] hover:bg-[rgb(126,87,194)]"></i>
+            </div>
+            <i
+              class="bi bi-search cursor-pointer w-[10%] mx-2 hover:text-[rgba(248,250,252)] hover:bg-[rgb(126,87,194)]"></i>
+          </section>
+
+          <!-- mob part2 -->
+          <section
+            class="justify-end  *:text-[rgb(126,87,194)] *:bg-[rgba(248,250,252)] *:ml-3  *:rounded *:flex *:justify-center *:items-center *:h-[30px] *:w-[40px]">
+            <!-- mob part2-1 -->
+            <figure class="w-[20%]">
+              <img class="" src="./asses/img/avada.svg" alt="">
+            </figure>
+            <!-- mob part2-2 -->
+            <i class=" text-[rgba(248,250,252)] text-xl w-[10%]  flex justify-end  bi bi-arrow-repeat "></i>
+            <i class="text-[rgba(248,250,252)] text-xl w-[10%]  flex justify-end bi bi-broadcast"></i>
+            <i class="bi bi-browser-edge text-[rgba(248,250,252)] text-xl w-[10%]  flex justify-end"></i>
+          </section>
+
+        </div>
+        <!-- *************mob end -->
+
+      </div>
+      <!-- ******part a end-->
+
+      <!-- ****part1 -->
+      <div id="_barMenu"
+        class="bg-[#FFFFFF] flex flex-wrap content-between   px-6 py-10 w-[45%] sm:w-[35%] lg:w-[18%]  top-0 h-[100vh]  lg:h-[85vh]  fixed z-50 left-[-100%] lg:left-0 lg:top-[15vh] duration-75 ease-linear *:text-[#2d2d2d] *:w-full *:font-primary ">
+
+        <!-- part1-1 -->
+        <div class="h-[45%] border-b-2 flex flex-wrap content-between *:w-full pb-2 ">
+          <h5 class=" font-bold _hidden">Dashbord</h5>
+          <div class="flex flex-wrap pl-4 py-2 bg-[#EDE7F6] justify-center rounded-md text-[rgb(126,87,194)] cursor-pointer">
+            <span class="w-[20%] "><i class="bi bi-arrows-fullscreen"></i></span>
+            <p class="w-[80%] _hidden">Analytics</p>
+          </div>
+          <div onclick="users()"
+            class="bg flex flex-wrap pl-4 py-2 hover:bg-[#EDE7F6] justify-center  rounded-md duration-75 cursor-pointer hover:text-[rgb(126,87,194)]">
+            <span class="w-[20%]"><i class="bi bi-people-fill"></i></span>
+            <p class="w-[80%] _hidden">Users</p>
+          </div>
+          <div
+            class="flex flex-wrap pl-4 py-2 hover:bg-[#EDE7F6] justify-center  rounded-md duration-75 cursor-pointer hover:text-[rgb(126,87,194)]">
+            <span class="w-[20%]"><i class="bi bi-bar-chart"></i></span>
+            <p class="w-[80%] _hidden">Progress</p>
+          </div>
+        </div>
+
+        <div class="h-[50%] flex flex-wrap content-between *:w-full pb-2">
+          <h5 class=" font-bold _hidden">Application</h5>
+          <div
+            class="flex flex-wrap pl-4 py-2  rounded-md duration-75 cursor-pointer justify-center  hover:bg-[#EDE7F6] hover:text-[rgb(126,87,194)]">
+            <span class="w-[20%]"><i class="bi bi-clipboard2-data-fill"></i></span>
+            <p class="w-[80%] _hidden">Data</p>
+          </div>
+          <div
+            class="flex justify-center  flex-wrap pl-4 py-2  rounded-md duration-75 cursor-pointer hover:bg-[#EDE7F6] hover:text-[rgb(126,87,194)]">
+            <span class="w-[20%]"><i class="bi bi-credit-card-fill"></i></span>
+            <p class="w-[80%] _hidden">Documents</p>
+          </div>
+          <div
+            class="flex flex-wrap justify-center  pl-4 py-2  rounded-md duration-75 cursor-pointer hover:bg-[#EDE7F6] hover:text-[rgb(126,87,194)]">
+            <span class="w-[20%]"><i class="bi bi-calendar-range-fill"></i></span>
+            <p class="w-[80%] _hidden">Calendar</p>
+          </div>
+        </div>
+        <p class="_hidden mt-2 font-primary2 text-[10px] text-center "> Developed By Niloofar Yoosefi</p>
+
+      </div>
+     
+      <!-- ******part1 end -->
+
+      <!-- ******part2 -->        
+      <!-- ***part2 desk-->
+      <div id="_mainContent"
+        class="duration-75 hidden lg:flex  lg:w-[78%] mr-6 h-[120vh]  mt-[15vh]  flex-wrap justify-between  rounded-md  px-10 py-14 bg-[#EDE7F6] *:h-full  *:font-primary">
+        <!-- part2-1 -->
+        <section class="w-[70%] *:w-full flex flex-wrap content-between">
+          <!-- part2-1-1 -->
+          <section
+            class=" h-[30%] flex flex-wrap justify-between *:w-[48%]   *:rounded-2xl *:flex *:flex-wrap *:text-[#EDE7F6]">
+            <!-- part2-1-1-1 -->
+            <div class="bg-[rgb(94,53,177)] *:h-full  *:py-5">
+              <section class="w-[80%] px-7">
+                <i class="bi bi-aspect-ratio-fill  text-3xl "></i>
+                <p class="text-4xl mt-10">$500000</p>
+                <p class="mt-5">Total Earning</p>
+              </section>
+              <!-- part2-1-1-2 -->
+              <section class="w-[10%]">
+                <i class="bi bi-body-text text-2xl"></i>
+              </section>
+            </div>
+            <!-- part2-1-2 -->
+            <div class="bg-[rgb(30,136,229)] *:h-full  *:py-5">
+              <!-- part2-1-1-2 -->
+              <section class="w-[100%] h-full px-7">
+                <div class="w-full h-full  flex items-center">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </section>
+            </div>
+          </section>
+          <!-- part2-1-2 -->
+          <section class="h-[60%] bg-[rgb(94,53,177)]  rounded-2xl px-7 py-5 flex items-center">
+            <canvas id="myChart2"></canvas>
+          </section>
+
+        </section>
+
+        <!-- part2-2 -->
+        <section class="w-[27%] flex flex-wrap content-between *:w-full *:rounded-2xl *:border-2 *:border-white ">
+          <!-- part2-2-1 -->
+          <div class="h-[17%] bg-[rgb(30,136,229)] flex justify-center items-center">
+            <section class="w-[70%] h-[60%]  flex flex-wrap *:h-full ">
+              <!-- part2-2-1-1 -->
+              <div class="w-[40%] flex  items-center ">
+                <div
+                  class="w-[50px] h-[50px] rounded-md bg-[rgb(94,53,177)] flex flex-wrap justify-center items-center ">
+                  <i class="bi bi-bookmark-dash-fill text-[#EDE7F6] text-2xl"></i>
+                </div>
+              </div>
+              <!-- part2-2-1-2 -->
+              <div class="w-[60%] flex  items-center">
+                <div
+                  class="w-[50px] h-[50px] rounded-md  flex flex-wrap justify-center items-center *:w-full *:text-[#EDE7F6]">
+                  <p class="">$203k</p>
+                  <p class="text-xs"> Income</p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- part2-2-2 -->
+          <div class="h-[17%] bg-[rgb(94,53,177)] flex justify-center items-center">
+            <section class="w-[70%] h-[60%]  flex flex-wrap *:h-full ">
+              <!-- part2-2-1-1 -->
+              <div class="w-[40%] flex  items-center">
+                <div
+                  class="w-[50px] h-[50px] rounded-md bg-[rgb(30,136,229)] flex flex-wrap justify-center items-center ">
+                  <i class="bi bi-briefcase-fill text-[#EDE7F6] text-2xl"></i>
+                </div>
+              </div>
+              <!-- part2-2-1-2 -->
+              <div class="w-[60%] flex  items-center">
+                <div
+                  class="w-[50px] h-[50px] rounded-md  flex flex-wrap justify-center items-center *:w-full *:text-[#EDE7F6]">
+                  <p class="">$147k</p>
+                  <p class="text-xs "> Income</p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- part2-2-3 -->
+          <div class="h-[55%] bg-[rgb(94,53,177)] flex justify-center items-center">
+            <div class="w-[90%] h-[60%] flex justify-center">
+              <canvas id="myChart3"></canvas>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+      <!-- ***part2 mob -->
+      <div class="flex lg:hidden w-[100%]  h-[120vh]  mt-[15vh]  flex-wrap justify-between    px-6  *:font-primary">
+        <div class="bg-[#EDE7F6] w-full h-full rounded-md flex flex-wrap px-7 py-6 *:w-full ">
+
+          <!-- ***part2-1 mob -->
+          <div
+            class="h-[35%] flex flex-wrap justify-between *:w-[48%] *:h-full  *:rounded-2xl *:border-2 *:border-white  bg-pink-400">
+            <div class="bg-[rgb(94,53,177)] flex flex-wrap *:text-[#EDE7F6] *:h-full py-5">
+              <!-- part2-1-1 mob -->
+              <section class="w-[80%] px-7 ">
+                <i class="bi bi-aspect-ratio-fill  text-3xl "></i>
+                <p class="text-sm mt-10">$500000</p>
+                <p class="mt-2 text-xs">Total Earning</p>
+              </section>
+              <!-- part2-1-2 mob -->
+              <section class="w-[10%] bg">
+                <i class="bi bi-body-text text-2xl"></i>
+              </section>
+
+              <!-- part2-1-2 mob -->
+
+
+            </div>
+
+            <!-- part2-1-2 mob -->
+            <!-- chart4 -->
+            <section class="w-[100%] h-full px-7">
+              <div class="w-full h-full  flex items-center">
+                <canvas id="myChart4"></canvas>
+              </div>
+            </section>
+
+          </div>
+         <!-- *****part2-1 mob end -->
+
+         <!-- *****part2-2 mob  -->
+          <!-- part2-2-1 -->
+          <div class="h-[20%] flex justify-between *:h-full *:rounded-md *:w-[48%] *:bg-[rgb(30,136,229)] *:flex *:justify-center *:items-center" >
+            <!-- part2-2-1-1 -->
+            <section class="">
+              <section class="w-[70%] h-[60%]  flex flex-wrap *:h-full ">                
+                <div class="w-[40%] flex  items-center ">
+                  <div
+                    class="w-[50px] h-[50px] rounded-md bg-[rgb(94,53,177)] flex flex-wrap justify-center items-center ">
+                    <i class="bi bi-bookmark-dash-fill text-[#EDE7F6] text-2xl"></i>
+                  </div>
+                </div>
+                <!-- part2-2-1-2 -->
+                <div class="w-[60%] flex  items-center pl-4 sm:pl-0">
+                  <div
+                    class="w-[50px] h-[50px] rounded-md  flex flex-wrap justify-center items-center *:w-full *:text-[#EDE7F6]">
+                    <p class="">$203k</p>
+                    <p class="text-xs"> Income</p>
+                  </div>
+                </div>
+              </section>
+            </section>
+
+             <!-- part2-2-1-2 -->
+            <section class="">
+              <section class="w-[70%] h-[60%]  flex flex-wrap *:h-full ">               
+                <div class="w-[40%] flex  items-center">
+                  <div
+                    class="w-[50px] h-[50px] rounded-md bg-[rgb(30,136,229)] flex flex-wrap justify-center items-center ">
+                    <i class="bi bi-briefcase-fill text-[#EDE7F6] text-2xl"></i>
+                  </div>
+                </div>              
+                <div class="w-[60%] flex  items-center">
+                  <div
+                    class="w-[50px] h-[50px] rounded-md  flex flex-wrap justify-center items-center *:w-full *:text-[#EDE7F6]">
+                    <p class="">$147k</p>
+                    <p class="text-xs "> Income</p>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </div>
+          <!-- *****part2-2 mob end  -->
+
+           <!-- *****part2-3 mob   -->
+          <div class=" h-[40%]  flex justify-center items-center bg-[rgb(30,136,229)]">
+            <div class="w-[90%] h-[90%] flex justify-center ">
+              <canvas id="myChart5"></canvas>
+            </div> 
+          </div>
+        </div>
+
+      </div>
+      <!-- *****part2-3 mob end  -->
+      <!-- *************part2 end -->
+
+      <!--*** part b -->
+      <section id="_return" onclick="myMenuMobReturn(this)" id="_gary"
+        class="  flex lg:hidden w-[55%] sm:w-[65%] h-[185vh] bg-[#80808088] fixed z-50 right-[-100%] top-0 duration-75">
+      </section>
+      <!--*** part b end-->
+      
+    </section>
+  </main>
+</body>
+<script src="./asses/script/script.js"></script>
+
+</html>
